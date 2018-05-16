@@ -13,7 +13,7 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     @if(Auth::check())
-                    <li><a href="#"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>アイテムを追加</a></li>
+                    <li><a href="{{ route('items.create') }}"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span>アイテムを追加</a></li>
                     <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
                             <span class="Gravatar"><img src="{{ Gravatar::src(Auth::user()->email, 20) . '&d=mm' }}" alt="" class="img-circle"></span>
